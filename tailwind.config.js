@@ -5,7 +5,10 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+      fontFamily: {
+        sans: ['Inter', 'sans-serif' ],
+        cursive: ['Brush Script MT', 'cursive'],
+      }
   },
   plugins: [],
 }
