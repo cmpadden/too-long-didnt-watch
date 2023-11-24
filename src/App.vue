@@ -40,15 +40,15 @@ const film_genres = computed(() => {
 /**
  * External links converted from array to dictionary.
  */
-const film_links = computed(() => {
-  if (film) {
-    return {
-      imdb: film.value.external_links[0],
-      tmdb: film.value.external_links[1],
-    };
-  }
-  return null;
-});
+// const film_links = computed(() => {
+//   if (film) {
+//     return {
+//       imdb: film.value.external_links[0],
+//       tmdb: film.value.external_links[1],
+//     };
+//   }
+//   return null;
+// });
 </script>
 
 <template>
@@ -118,7 +118,23 @@ const film_links = computed(() => {
                   {{ film.description }}
                 </div>
 
-                <h2 class="uppercase font-bold">AI Summary</h2>
+                <div class="flex items-top">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 fill-current text-blue-400 hover:text-yellow-200 transition ease-in-out duration-150"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
+                    />
+                  </svg>
+                  <h2 class="ml-2 uppercase font-bold">AI Generated Summary</h2>
+                </div>
 
                 <div class="font-normal text-justify">
                   {{ film.summary }}
@@ -126,7 +142,7 @@ const film_links = computed(() => {
 
                 <!-- <div class="flex flex-auto space-x-2"> -->
                 <!--   <img -->
-                <!--     class="h-[32px] cursor-pointer" -->
+                <!--     class="h-[32px] cursor-ponnter" -->
                 <!--     src="/images/imdb-180px.png" -->
                 <!--     :href="film_links.imdb" -->
                 <!--   /> -->
@@ -152,7 +168,7 @@ const film_links = computed(() => {
               </div>
             </div>
             <div
-              class="w-full md:w-2/5 p-y-2 px-4 max-h-[450px] overflow-y-auto"
+              class="w-full md:w-2/5 p-y-2 px-4 max-h-[600px] overflow-y-auto"
             >
               <div class="space-y-2">
                 <h2 class="uppercase font-bold">Cast</h2>
