@@ -2,6 +2,8 @@
 
 Explore LLM generated movie summaries powered by OpenAI's GPT.
 
+<img width="1400" alt="Screenshot 2023-11-24 at 2 56 08 PM" src="https://github.com/cmpadden/too-long-didnt-watch/assets/5807118/bd5bd3cf-c21c-40c9-a575-3fbde29e4c1e">
+
 ## Development
 
 ```sh
