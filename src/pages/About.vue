@@ -1,10 +1,8 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="container mx-auto my-8 space-y-8">
     <div class="sticky top-4">
       <div class="border-2 border-black bg-white p-4 space-y-4">
-        <h1 class="text-4xl font-bold">About</h1>
+        <h1 class="text-2xl md:text-4xl font-bold">About</h1>
         <p>
           <em>Too Long, Didn't Watch</em> is the result of a capstone project
           for the
@@ -21,7 +19,7 @@
           provided by OpenAI.
         </p>
 
-        <h2 class="text-2xl font-bold">Source Code</h2>
+        <h2 class="text-1xl md:text-2xl font-bold">Source Code</h2>
         <p>
           The source code for both this website, and the Dagster data pipelines
           used to source the data are available on GitHub at:
@@ -44,7 +42,7 @@
           </li>
         </ul>
 
-        <h2 class="text-2xl font-bold">Asset Lineage</h2>
+        <h2 class="text-1xl md:text-2xl font-bold">Asset Lineage</h2>
         <img
           class="border-2 border-black"
           src="/images/dagster-asset-lineage.png"
