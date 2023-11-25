@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import lineage_image from "/images/dagster-asset-lineage.png";
+</script>
+
 <template>
   <div class="container mx-auto my-8 space-y-8">
     <div class="sticky top-4">
@@ -52,10 +56,7 @@
         </p>
 
         <h2 class="text-1xl md:text-2xl font-bold">Asset Lineage</h2>
-        <img
-          class="border-2 border-black"
-          src="/images/dagster-asset-lineage.png"
-        />
+        <img class="border-2 border-black" :src="lineage_image" />
       </div>
     </div>
   </div>

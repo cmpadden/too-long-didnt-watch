@@ -10,7 +10,7 @@ const selected_index = ref(0);
 const films = ref();
 
 onMounted(async () => {
-  const response = await fetch("/data/film_details.json");
+  const response = await fetch("/too-long-didnt-watch/data/film_details.json");
   films.value = await response.json();
 });
 
@@ -90,7 +90,7 @@ const film_genres = computed(() => {
             <div class="flex justify-center">
               <img
                 class="w-[250px] border-solid border-2 border-black"
-                :src="`/images/posters/${film.film_slug}.jpg`"
+                :src="`/too-long-didnt-watch/images/posters/${film.film_slug}.jpg`"
               />
             </div>
           </div>
@@ -190,7 +190,7 @@ const film_genres = computed(() => {
           'ring-4 ring-yellow-200': selected_index == index,
           'border-2 border-solid border-black': selected_index !== index,
         }"
-        :src="`/images/posters/${film.film_slug}.jpg`"
+        :src="`/too-long-didnt-watch/images/posters/${film.film_slug}.jpg`"
       />
     </div>
   </div>
