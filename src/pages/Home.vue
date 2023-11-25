@@ -58,7 +58,7 @@ const film_genres = computed(() => {
   <template v-if="film">
     <div class="sticky top-4">
       <div
-        class="border-2 border-black bg-white max-h-[512px] lg:max-h-none overflow-y-scroll"
+        class="border-2 border-black bg-white max-h-[550px] lg:max-h-none overflow-y-scroll"
       >
         <div class="border-solid border-b-2 border-black bg-white sticky top-0">
           <div class="flex py-2 px-4">
@@ -155,7 +155,7 @@ const film_genres = computed(() => {
               </div>
             </div>
           </div>
-          <div class="w-full sm:w-2/5 p-y-2 px-4 max-h-[600px] overflow-y-auto">
+          <div class="w-full sm:w-2/5 p-y-2 px-4 overflow-y-auto">
             <div class="space-y-2">
               <h2 class="uppercase font-bold">Cast</h2>
               <table class="">
