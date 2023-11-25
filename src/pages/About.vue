@@ -30,17 +30,26 @@
             <a
               class="text-blue-400 underline"
               href="https://github.com/cmpadden/too-long-didn't-watch"
-              >https://github.com/cmpadden/too-long-didn't-watch</a
+              >/cmpadden/too-long-didn't-watch</a
             >
           </li>
           <li>
             <a
               class="text-blue-400 underline"
               href="https://github.com/cmpadden/dagster-essentials-capstone"
-              >https://github.com/cmpadden/dagster-essentials-capstone</a
+              >/cmpadden/dagster-essentials-capstone</a
             >
           </li>
         </ul>
+
+        <p>
+          If you've found the code to be helpful, you're welcome to
+          <a
+            class="text-blue-400 underline"
+            href="https://www.buymeacoffee.com/coltonpadden"
+            >buy me a cup of coffee</a
+          >!
+        </p>
 
         <h2 class="text-1xl md:text-2xl font-bold">Asset Lineage</h2>
         <img
