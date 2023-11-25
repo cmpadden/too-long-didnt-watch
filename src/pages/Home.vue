@@ -39,6 +39,16 @@ const film_genres = computed(() => {
   return null;
 });
 
+const filtered_cast_details = computed(() => {
+  if (film) {
+    return zip(
+      film.value.cast_details.name,
+      film.value.cast_details.title,
+    ).filter((r: Array<String>) => !r[0].includes("Show All"));
+  }
+  return null;
+});
+
 /**
  * External links converted from array to dictionary.
  */
@@ -160,10 +170,7 @@ const film_genres = computed(() => {
               <h2 class="uppercase font-bold">Cast</h2>
               <table class="">
                 <tr
-                  v-for="([name, title], index) in zip(
-                    film.cast_details.name,
-                    film.cast_details.title,
-                  )"
+                  v-for="([name, title], index) in filtered_cast_details"
                   :key="index"
                 >
                   <td class="border-b pr-2">{{ name }}</td>
