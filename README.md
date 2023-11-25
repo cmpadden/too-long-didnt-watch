@@ -18,6 +18,10 @@ npm run build
 npm run preview
 ```
 
+For more information on deployment, please refer to the official guide:
+
+https://vitejs.dev/guide/static-deploy.html#github-pages
+
 ## Background
 
 This website is user-facing portion of my solution to the [Dagster
