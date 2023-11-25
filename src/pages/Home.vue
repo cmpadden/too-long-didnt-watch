@@ -4,7 +4,7 @@ import { ref, computed, onMounted } from "vue";
 /**
  * helper function to zip two arrays
  */
-const zip = (a, b) => a.map((k, i) => [k, b[i]]);
+const zip = (a: any, b: any) => a.map((k: any, i: number) => [k, b[i]]);
 
 const selected_index = ref(0);
 const films = ref();
@@ -32,7 +32,9 @@ const film = computed(() => {
 const film_genres = computed(() => {
   if (film) {
     const zs = zip(film.value.genre_links, film.value.genre_names);
-    return zs.filter((g) => g[0].includes("/genre/")).map((g) => g[1]);
+    return zs
+      .filter((g: Array<string>) => g[0].includes("/genre/"))
+      .map((g: Array<string>) => g[1]);
   }
   return null;
 });
@@ -55,7 +57,9 @@ const film_genres = computed(() => {
   <!-- Film Details -->
   <template v-if="film">
     <div class="sticky top-4">
-      <div class="border-2 border-black bg-white max-h-[512px] lg:max-h-none overflow-y-scroll">
+      <div
+        class="border-2 border-black bg-white max-h-[512px] lg:max-h-none overflow-y-scroll"
+      >
         <div class="border-solid border-b-2 border-black">
           <div class="flex py-2 px-4">
             <div class="ml-auto">

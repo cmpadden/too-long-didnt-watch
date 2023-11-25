@@ -13,7 +13,7 @@ const routes = [
   }
 ]
 
-export default function (history) {
+export default function (history: any) {
   return createRouter({
     history,
     routes

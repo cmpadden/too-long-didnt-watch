@@ -10,6 +10,14 @@ Explore LLM generated movie summaries powered by OpenAI's GPT.
 npm run dev
 ```
 
+## Deployment
+
+```sh
+npm run build
+# &
+npm run preview
+```
+
 ## Background
 
 This website is user-facing portion of my solution to the [Dagster
