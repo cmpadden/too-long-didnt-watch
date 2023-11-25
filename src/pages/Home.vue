@@ -60,7 +60,7 @@ const film_genres = computed(() => {
       <div
         class="border-2 border-black bg-white max-h-[512px] lg:max-h-none overflow-y-scroll"
       >
-        <div class="border-solid border-b-2 border-black">
+        <div class="border-solid border-b-2 border-black bg-white sticky top-0">
           <div class="flex py-2 px-4">
             <div class="ml-auto">
               <span
