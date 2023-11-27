@@ -33,8 +33,8 @@ import lineage_image from "/images/dagster-asset-lineage.png";
           <li>
             <a
               class="text-blue-400 underline"
-              href="https://github.com/cmpadden/too-long-didn't-watch"
-              >/cmpadden/too-long-didn't-watch</a
+              href="https://github.com/cmpadden/too-long-didnt-watch"
+              >/cmpadden/too-long-didnt-watch</a
             >
           </li>
           <li>
